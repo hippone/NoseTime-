@@ -1,0 +1,95 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+            "path" : "pages/index/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "首页",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/find/find",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发现",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/chat/chat",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "圈子",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/person/person",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#C1CDC1",
+		"selectedColor":"#FF83FA",
+		"list":[
+			{
+				"text":"首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/index.png",
+				"selectedIconPath":"static/index2.png"
+			},
+			{
+				"text":"发现",
+				"pagePath":"pages/find/find",
+				"iconPath":"static/find.png",
+				"selectedIconPath":"static/find2.png"
+			},
+			{
+				"text":"圈子",
+				"pagePath":"pages/chat/chat",
+				"iconPath":"static/chat.png",
+				"selectedIconPath":"static/chat2.png"
+			},
+			{
+				"text":"个人",
+				"pagePath":"pages/person/person",
+				"iconPath":"static/person.png",
+				"selectedIconPath":"static/person2.png"
+			}
+		]
+	},
+	"condition":{
+		"current":0,
+		"list":[
+			{
+				"name":"详情页",
+				"path":"pages/detail/detail",
+				"query":"id=90"
+			}
+		]
+	}
+}
